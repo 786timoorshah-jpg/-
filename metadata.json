@@ -1,0 +1,7 @@
+{
+  "name": "STS Sadat",
+  "description": "سیستم جامع مدیریت مالی، حواله و حساب‌های مشتریان STS سادات",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

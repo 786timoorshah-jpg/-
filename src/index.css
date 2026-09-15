@@ -1,0 +1,96 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    font-size: 17.5px;
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+  }
+
+  * {
+    font-family: 'Vazirmatn', 'Segoe UI', Tahoma, system-ui, -apple-system, BlinkMacSystemFont, Roboto, 'Helvetica Neue', Arial, sans-serif;
+  }
+
+  body {
+    font-size: 1rem;
+    line-height: 1.65;
+    letter-spacing: -0.01em;
+  }
+
+  input, select, textarea, button {
+    font-family: inherit;
+    font-size: 0.95rem;
+  }
+
+  table {
+    font-size: 0.93rem;
+  }
+}
+
+/* Custom purple & green independent dashboard scrollbar */
+.dashboard-scroll, .custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #10b981 rgba(16, 185, 129, 0.1);
+}
+.dashboard-scroll::-webkit-scrollbar, .custom-scrollbar::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+.dashboard-scroll::-webkit-scrollbar-track, .custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(6, 78, 59, 0.2);
+  border-radius: 9999px;
+}
+.dashboard-scroll::-webkit-scrollbar-thumb, .custom-scrollbar::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #10b981, #059669);
+  border-radius: 9999px;
+}
+.dashboard-scroll::-webkit-scrollbar-thumb:hover, .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #34d399;
+}
+
+
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+    direction: rtl !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+  .print-break-inside-avoid {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+  .print-modal-overlay {
+    position: static !important;
+    background: transparent !important;
+    backdrop-filter: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    display: block !important;
+  }
+  .print-modal-content {
+    box-shadow: none !important;
+    border: none !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    max-height: none !important;
+    overflow: visible !important;
+  }
+  @page {
+    margin: 1cm;
+    size: auto;
+  }
+}
+
+@media screen {
+  .print-only {
+    display: none !important;
+  }
+}

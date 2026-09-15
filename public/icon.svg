@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#059669" />
+      <stop offset="50%" stop-color="#047857" />
+      <stop offset="100%" stop-color="#064e3b" />
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="50%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-opacity="0.25" />
+    </filter>
+  </defs>
+
+  <!-- Background rounded rect -->
+  <rect width="512" height="512" rx="112" fill="url(#bg)" />
+
+  <!-- Outer gold decorative ring -->
+  <circle cx="256" cy="256" r="180" fill="none" stroke="url(#gold)" stroke-width="8" opacity="0.85" filter="url(#shadow)" />
+  <circle cx="256" cy="256" r="162" fill="none" stroke="#ffffff" stroke-width="2" stroke-dasharray="6 8" opacity="0.5" />
+
+  <!-- Center medallion -->
+  <circle cx="256" cy="256" r="130" fill="#064e3b" filter="url(#shadow)" />
+  <circle cx="256" cy="256" r="126" fill="none" stroke="url(#gold)" stroke-width="3" />
+
+  <!-- STS Sadat typography & emblem -->
+  <g fill="#ffffff" text-anchor="middle" font-family="'Vazirmatn', system-ui, -apple-system, sans-serif">
+    <!-- Currency / Financial Exchange Graphic -->
+    <path d="M210 200 L302 200 M210 200 L235 180 M210 200 L235 220" stroke="url(#gold)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+    <path d="M302 230 L210 230 M302 230 L277 210 M302 230 L277 250" stroke="#ffffff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+    
+    <text x="256" y="295" font-size="44" font-weight="900" fill="#ffffff" letter-spacing="2">STS</text>
+    <text x="256" y="335" font-size="24" font-weight="700" fill="url(#gold)">سادات</text>
+  </g>
+</svg>
